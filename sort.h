@@ -5,6 +5,12 @@
 #include <stddef.h>
 #include <stdlib.h>
 
+/**
+ * enum bool - Enumeration of boolean values.
+ * @false: Equals 0.
+ * @true: Equals 1.
+ */
+
 typedef enum bool
 {
 	false = 0,
@@ -20,9 +26,9 @@ typedef enum bool
  */
 typedef struct listint_s
 {
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
 } listint_t;
 
 /* Helper functions */
